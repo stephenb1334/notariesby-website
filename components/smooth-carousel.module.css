@@ -1,0 +1,52 @@
+.carouselContainer {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.carouselTrack {
+  display: flex;
+  width: fit-content;
+  animation-name: scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.carouselItem {
+  flex-shrink: 0;
+  width: 12rem;
+  height: 12rem;
+  padding: 0.125rem;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-12rem * 8)); /* Width of one set of images */
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselItem {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-10rem * 8)); /* Width of one set of images for mobile */
+    }
+  }
+}
