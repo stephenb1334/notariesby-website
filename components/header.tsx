@@ -57,7 +57,7 @@ export function Header() {
                 </Link>
               ))}
             </nav>
-            <Button asChild className="bg-deep-purple text-white border border-black whitespace-nowrap">
+            <Button asChild className="bg-deep-charcoal-800 text-white border border-black whitespace-nowrap">
               <Link href="/schedule">Book Now</Link>
             </Button>
           </div>
@@ -85,7 +85,7 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button asChild className="mt-4 bg-deep-purple text-white border border-black">
+              <Button asChild className="mt-4 bg-deep-charcoal-800 text-white border border-black">
                 <Link href="/schedule" onClick={() => setIsOpen(false)}>
                   Book Now
                 </Link>

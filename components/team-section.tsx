@@ -16,7 +16,7 @@ export function TeamSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-deep-purple mb-4">Meet Our Expert Team</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">Meet Our Expert Team</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Professional notary specialists dedicated to providing exceptional service throughout Tampa Bay
           </p>
@@ -39,14 +39,14 @@ export function TeamSection() {
                   <img
                     src="/images/jill-headshot.png"
                     alt="Jill Munoz - Principal & Owner"
-                    className="w-full h-full object-cover rounded-full border-4 border-deep-purple/20 shadow-lg"
+                    className="w-full h-full object-cover rounded-full border-4 border-neutral-300 shadow-lg"
                   />
                 </div>
 
                 {/* Content */}
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-deep-purple mb-2">Jill Munoz</h3>
+                    <h3 className="text-2xl font-bold text-black mb-2">Jill Munoz</h3>
                     <p className="text-steel-blue font-semibold text-lg">Principal & Owner</p>
                   </div>
 
@@ -58,14 +58,14 @@ export function TeamSection() {
 
                   {/* Contact Buttons */}
                   <div className="flex gap-3 justify-center pt-4">
-                    <Button size="sm" className="bg-deep-purple hover:bg-deep-purple/90 text-white">
+                    <Button size="sm" className="bg-deep-charcoal-800 hover:bg-deep-charcoal-700 text-white">
                       <Mail className="w-4 h-4 mr-2" />
                       Contact
                     </Button>
                     <Button
                       size="sm"
                       variant="outline"
-                      className="border-deep-purple text-deep-purple hover:bg-deep-purple/5"
+                      className="border-neutral-300 text-black hover:bg-neutral-100"
                     >
                       <Phone className="w-4 h-4 mr-2" />
                       Schedule
@@ -98,7 +98,7 @@ export function TeamSection() {
                 {/* Content */}
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-deep-purple mb-2">Natalie Kolaxis</h3>
+                    <h3 className="text-2xl font-bold text-black mb-2">Natalie Kolaxis</h3>
                     <p className="text-steel-blue font-semibold text-lg">Senior Notary Specialist</p>
                   </div>
 
@@ -137,15 +137,15 @@ export function TeamSection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-deep-purple/5 rounded-2xl p-8 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-deep-purple mb-4">Ready to Work with Our Team?</h3>
+          <div className="bg-neutral-100 rounded-2xl p-8 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-black mb-4">Ready to Work with Our Team?</h3>
             <p className="text-gray-600 mb-6">Schedule an appointment with our professional notary specialists today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-deep-purple hover:bg-deep-purple/90">
+              <Button size="lg" className="bg-deep-charcoal-800 hover:bg-deep-charcoal-700">
                 <MapPin className="w-4 h-4 mr-2" />
                 Book Appointment
               </Button>
-              <Button size="lg" variant="outline" className="border-deep-purple text-deep-purple">
+              <Button size="lg" variant="outline" className="border-neutral-300 text-black">
                 <Phone className="w-4 h-4 mr-2" />
                 Call Us Now
               </Button>

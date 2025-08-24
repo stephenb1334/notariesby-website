@@ -35,17 +35,17 @@ function ServiceCard({ title, description, services, detailedServices, pricing, 
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <Card className="border-2 border-deep-purple-200/20 h-full flex flex-col">
+    <Card className="border-2 border-neutral-200/20 h-full flex flex-col">
       <CardHeader className="flex-shrink-0">
         <CardTitle className="font-heading text-lg md:text-xl">{title}</CardTitle>
         <CardDescription className="text-sm md:text-base">{description}</CardDescription>
-        {pricing && <div className="text-lg font-semibold text-deep-purple-700">{pricing}</div>}
+        {pricing && <div className="text-lg font-semibold text-black">{pricing}</div>}
       </CardHeader>
       <CardContent className="flex-grow flex flex-col">
         <ul className="space-y-3 mb-4 flex-grow">
           {services.map((service, index) => (
             <li key={index} className="flex items-start gap-3">
-              <Check className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-600 mt-0.5 flex-shrink-0" />
+              <Check className="h-4 w-4 md:h-5 md:w-5 text-black mt-0.5 flex-shrink-0" />
               <span className="text-sm md:text-base leading-relaxed">{service}</span>
             </li>
           ))}
@@ -56,7 +56,7 @@ function ServiceCard({ title, description, services, detailedServices, pricing, 
             <Button
               variant="outline"
               onClick={() => setIsExpanded(!isExpanded)}
-              className="w-full mb-4 border-deep-purple-200 text-deep-purple-700 text-sm md:text-base py-2 md:py-3"
+              className="w-full mb-4 border-neutral-200 text-black text-sm md:text-base py-2 md:py-3"
             >
               {isExpanded ? (
                 <>
@@ -72,11 +72,11 @@ function ServiceCard({ title, description, services, detailedServices, pricing, 
             </Button>
 
             {isExpanded && (
-              <div className="space-y-4 mb-4 p-3 md:p-4 bg-deep-purple-50 rounded-lg">
-                <h4 className="font-semibold text-deep-purple-800 text-sm md:text-base">Detailed Services:</h4>
+              <div className="space-y-4 mb-4 p-3 md:p-4 bg-neutral-50 rounded-lg">
+                <h4 className="font-semibold text-black text-sm md:text-base">Detailed Services:</h4>
                 {detailedServices.map((service, index) => (
-                  <div key={index} className="border-l-4 border-deep-purple-200 pl-3 md:pl-4">
-                    <h5 className="font-medium text-deep-purple-700 mb-1 text-sm md:text-base">{service.name}</h5>
+                  <div key={index} className="border-l-4 border-neutral-300 pl-3 md:pl-4">
+                    <h5 className="font-medium text-black mb-1 text-sm md:text-base">{service.name}</h5>
                     <p className="text-xs md:text-sm text-slate-blue-700 leading-relaxed">{service.description}</p>
                   </div>
                 ))}
@@ -87,7 +87,7 @@ function ServiceCard({ title, description, services, detailedServices, pricing, 
 
         <Button
           asChild
-          className="w-full bg-deep-purple text-white border border-black mt-auto text-sm md:text-base py-2 md:py-3"
+          className="w-full bg-deep-charcoal-800 text-white border border-black mt-auto text-sm md:text-base py-2 md:py-3"
         >
           <Link href={`/schedule?service=${encodeURIComponent(serviceType)}`}>Book {title}</Link>
         </Button>
@@ -278,7 +278,7 @@ export default function ServicesPage() {
           sizes="100vw"
           style={{ objectFit: "cover" }}
         />
-        <div className="absolute inset-0 bg-deep-purple-900/60"></div>
+        <div className="absolute inset-0 bg-deep-charcoal-900/70"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
           <h1 className="text-2xl font-bold tracking-tighter font-heading text-white sm:text-3xl md:text-4xl lg:text-5xl mb-4 drop-shadow-lg">
             Our Notary Services
@@ -447,15 +447,15 @@ export default function ServicesPage() {
 
         {/* Service Categories Section */}
         <div className="max-w-6xl mx-auto">
-          <div className="bg-deep-purple-700/5 rounded-lg p-4 md:p-6 lg:p-8 mb-8 md:mb-12">
-            <h2 className="text-lg md:text-xl lg:text-2xl font-bold font-heading text-deep-purple-700 mb-4 md:mb-6 text-center">
+          <div className="bg-neutral-100 rounded-lg p-4 md:p-6 lg:p-8 mb-8 md:mb-12">
+            <h2 className="text-lg md:text-xl lg:text-2xl font-bold font-heading text-black mb-4 md:mb-6 text-center">
               Our Service Categories
             </h2>
             <div className="grid gap-3 md:gap-4 lg:gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-700/10">
-                    <FileText className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <FileText className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Document Services</h3>
@@ -466,8 +466,8 @@ export default function ServicesPage() {
 
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-700/10">
-                    <Home className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <Home className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Real Estate</h3>
@@ -478,8 +478,8 @@ export default function ServicesPage() {
 
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-700/10">
-                    <FileText className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <FileText className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Estate Planning</h3>
@@ -490,8 +490,8 @@ export default function ServicesPage() {
 
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-100">
-                    <Globe className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <Globe className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Apostille Services</h3>
@@ -500,8 +500,8 @@ export default function ServicesPage() {
 
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-700/10">
-                    <Car className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <Car className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Vehicle Documentation</h3>
@@ -512,8 +512,8 @@ export default function ServicesPage() {
 
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-700/10">
-                    <Briefcase className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <Briefcase className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Business Services</h3>
@@ -522,8 +522,8 @@ export default function ServicesPage() {
 
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-700/10">
-                    <Users className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <Users className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Bilingual Services</h3>
@@ -532,8 +532,8 @@ export default function ServicesPage() {
 
               <div className="bg-white p-3 md:p-4 rounded-lg shadow-sm border text-center">
                 <div className="flex justify-center mb-2 md:mb-3">
-                  <div className="p-2 rounded-full bg-deep-purple-100">
-                    <Heart className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                  <div className="p-2 rounded-full bg-neutral-200">
+                    <Heart className="h-4 w-4 md:h-5 md:w-5 text-black" />
                   </div>
                 </div>
                 <h3 className="font-medium font-heading text-xs md:text-sm lg:text-base">Wedding Officiant</h3>
@@ -546,8 +546,8 @@ export default function ServicesPage() {
           <div className="grid gap-4 md:gap-6 lg:gap-8 md:grid-cols-3 mb-8 md:mb-12">
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm border">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-full bg-deep-purple-700/10">
-                  <Clock className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                <div className="p-2 rounded-full bg-neutral-200">
+                  <Clock className="h-4 w-4 md:h-5 md:w-5 text-black" />
                 </div>
                 <h3 className="font-medium font-heading text-sm md:text-base">Availability</h3>
               </div>
@@ -564,8 +564,8 @@ export default function ServicesPage() {
 
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm border">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-full bg-deep-purple-700/10">
-                  <MapPin className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                <div className="p-2 rounded-full bg-neutral-200">
+                  <MapPin className="h-4 w-4 md:h-5 md:w-5 text-black" />
                 </div>
                 <h3 className="font-medium font-heading text-sm md:text-base">Service Area</h3>
               </div>
@@ -580,8 +580,8 @@ export default function ServicesPage() {
 
             <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm border">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-full bg-deep-purple-700/10">
-                  <DollarSign className="h-4 w-4 md:h-5 md:w-5 text-deep-purple-700" />
+                <div className="p-2 rounded-full bg-neutral-200">
+                  <DollarSign className="h-4 w-4 md:h-5 md:w-5 text-black" />
                 </div>
                 <h3 className="font-medium font-heading text-sm md:text-base">Pricing</h3>
               </div>
@@ -596,17 +596,17 @@ export default function ServicesPage() {
 
           {/* CTA Section */}
           <div className="text-center">
-            <h2 className="text-lg md:text-xl lg:text-2xl font-bold font-heading text-deep-purple-700 mb-4">
+            <h2 className="text-lg md:text-xl lg:text-2xl font-bold font-heading text-black mb-4">
               Ready to Schedule a Notary Service?
             </h2>
             <p className="text-neutral-600 max-w-[600px] mx-auto mb-6 text-sm md:text-base px-4">
               Book an appointment today and experience our professional, convenient mobile notary services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button asChild size="lg" className="bg-deep-purple text-white border border-black">
+              <Button asChild size="lg" className="bg-deep-charcoal-800 text-white border border-black">
                 <Link href="/schedule">Book an Appointment</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-deep-purple-200 text-deep-purple-700">
+              <Button asChild variant="outline" size="lg" className="border-neutral-300 text-black">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
@@ -615,21 +615,21 @@ export default function ServicesPage() {
 
         {/* Service Areas */}
         <div className="mt-12 md:mt-16 text-center space-y-4">
-          <h2 className="text-lg md:text-xl lg:text-2xl font-bold tracking-tighter font-heading text-deep-purple-700">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-bold tracking-tighter font-heading text-black">
             Service Areas
           </h2>
           <p className="text-neutral-600 text-sm md:text-base lg:text-lg max-w-[600px] mx-auto px-4">
             We provide mobile notary services throughout all 67 Florida counties, including:
           </p>
           <div className="grid gap-2 md:gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 max-w-4xl mx-auto mt-6 px-4">
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">Tampa</div>
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">St. Petersburg</div>
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">Clearwater</div>
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">Largo</div>
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">Pinellas Park</div>
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">Seminole</div>
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">Palm Harbor</div>
-            <div className="bg-deep-purple-700/5 p-2 md:p-3 rounded-md text-xs md:text-sm">Wesley Chapel</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">Tampa</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">St. Petersburg</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">Clearwater</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">Largo</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">Pinellas Park</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">Seminole</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">Palm Harbor</div>
+            <div className="bg-neutral-100 p-2 md:p-3 rounded-md text-xs md:text-sm">Wesley Chapel</div>
           </div>
         </div>
       </div>

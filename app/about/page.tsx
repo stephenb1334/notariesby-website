@@ -50,7 +50,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold font-heading text-deep-purple">Our Story</h2>
+            <h2 className="text-3xl font-bold font-heading text-black">Our Story</h2>
             <p className="text-charcoal">
               With over 20 years of experience in real estate and notary services, we founded West Coast Notaries to
               provide convenient, professional notarization for the Tampa Bay community.
@@ -80,11 +80,11 @@ export default function AboutPage() {
           <GoogleReviews />
         </div>
         <div className="mt-20">
-          <h2 className="text-3xl font-bold text-center font-heading text-deep-purple mb-12">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold text-center font-heading text-black mb-12">Why Choose Us</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="p-3 rounded-full bg-deep-purple/10">
-                <Clock className="h-6 w-6 text-deep-purple" />
+              <div className="p-3 rounded-full bg-neutral-200">
+                <Clock className="h-6 w-6 text-black" />
               </div>
               <h3 className="text-xl font-bold font-heading">Convenience</h3>
               <p className="text-charcoal">
@@ -110,8 +110,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="p-3 rounded-full bg-deep-purple/10">
-                <MapPin className="h-6 w-6 text-deep-purple" />
+              <div className="p-3 rounded-full bg-neutral-200">
+                <MapPin className="h-6 w-6 text-black" />
               </div>
               <h3 className="text-xl font-bold font-heading">Local Knowledge</h3>
               <p className="text-charcoal">
@@ -121,7 +121,7 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="mt-20">
-          <h2 className="text-3xl font-bold text-center font-heading text-deep-purple mb-12">Our Office</h2>
+          <h2 className="text-3xl font-bold text-center font-heading text-black mb-12">Our Office</h2>
           <div className="grid gap-8 md:grid-cols-3">
             <div className="bg-white p-4 rounded-lg shadow-md aspect-video relative">
               <Image
@@ -153,7 +153,7 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="mt-20 text-center">
-          <h2 className="text-3xl font-bold font-heading text-deep-purple mb-6">Ready to Work With Us?</h2>
+          <h2 className="text-3xl font-bold font-heading text-black mb-6">Ready to Work With Us?</h2>
           <p className="text-charcoal max-w-[700px] mx-auto mb-8">
             Schedule an appointment today and experience our professional notary services in Tampa Bay.
           </p>

@@ -297,7 +297,7 @@ export function AppointmentBooking() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-deep-purple-700 hover:bg-deep-purple-800"
+                  className="w-full bg-deep-charcoal-800 hover:bg-deep-charcoal-700"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Request Appointment"}

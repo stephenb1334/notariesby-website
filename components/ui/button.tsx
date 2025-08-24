@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-purple-700 text-white border border-black", // No hover state, added border
+        default: "bg-deep-charcoal-800 text-white border border-black", // No hover state, added border
         destructive: "bg-destructive text-destructive-foreground border border-black", // No hover state, added border
         outline: "border border-input bg-background text-foreground", // No hover state for bg/text
         secondary: "bg-secondary text-secondary-foreground border border-black", // No hover state, added border
