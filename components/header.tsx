@@ -39,9 +39,10 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <img
-              src="/images/notariesby-logo-new.png"
+              src="/images/new-logo.png"
               alt="NotariesBy Logo"
-              className="h-6 md:h-8 w-auto"
+              className="h-8 md:h-10 w-auto max-w-[200px] object-contain"
+              style={{ filter: 'brightness(0.2) saturate(1)' }}
             />
           </Link>
 
