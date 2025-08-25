@@ -58,7 +58,7 @@ export function TeamSection() {
 
                   {/* Contact Buttons */}
                   <div className="flex gap-3 justify-center pt-4">
-                    <Button size="sm" className="bg-deep-charcoal-800 hover:bg-deep-charcoal-700 text-white">
+                    <Button size="sm" className="bg-brand-charcoal-700 hover:bg-brand-charcoal-600 text-white">
                       <Mail className="w-4 h-4 mr-2" />
                       Contact
                     </Button>
@@ -141,7 +141,7 @@ export function TeamSection() {
             <h3 className="text-2xl font-bold text-black mb-4">Ready to Work with Our Team?</h3>
             <p className="text-gray-600 mb-6">Schedule an appointment with our professional notary specialists today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-deep-charcoal-800 hover:bg-deep-charcoal-700">
+              <Button size="lg" className="bg-brand-charcoal-700 hover:bg-brand-charcoal-600">
                 <MapPin className="w-4 h-4 mr-2" />
                 Book Appointment
               </Button>

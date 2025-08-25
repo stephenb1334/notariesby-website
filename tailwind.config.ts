@@ -53,19 +53,32 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom color palette - dark professional tones
-        "deep-charcoal": {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
-          950: "#020617",
+        // Brand color palette - charcoal focused
+        "brand-charcoal": {
+          50: "#f5f6f7",
+          100: "#eaeaea",
+          200: "#b0b3b8",
+          300: "#777b80",
+          400: "#5d6d7e",
+          500: "#555a60",
+          600: "#44474d",
+          700: "#2e3136",
+          800: "#2e3136",
+          900: "#1a2a40",
+          950: "#1a2a40",
+        },
+        // Accent colors for the brand
+        "brand-blue": {
+          400: "#3a9bdc",
+          500: "#3a9bdc",
+        },
+        "brand-green": {
+          400: "#4ade80",
+          500: "#2ecc71",
+        },
+        "brand-orange": {
+          400: "#f5a623",
+          500: "#e67e22",
         },
         "slate-blue": {
           50: "#f8fafc",

@@ -87,7 +87,7 @@ function ServiceCard({ title, description, services, detailedServices, pricing, 
 
         <Button
           asChild
-          className="w-full bg-deep-charcoal-800 text-white border border-black mt-auto text-sm md:text-base py-2 md:py-3"
+          className="w-full bg-brand-charcoal-700 text-white border border-black mt-auto text-sm md:text-base py-2 md:py-3"
         >
           <Link href={`/schedule?service=${encodeURIComponent(serviceType)}`}>Book {title}</Link>
         </Button>
@@ -278,7 +278,7 @@ export default function ServicesPage() {
           sizes="100vw"
           style={{ objectFit: "cover" }}
         />
-        <div className="absolute inset-0 bg-deep-charcoal-900/70"></div>
+        <div className="absolute inset-0 bg-brand-charcoal-700/90"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
           <h1 className="text-2xl font-bold tracking-tighter font-heading text-white sm:text-3xl md:text-4xl lg:text-5xl mb-4 drop-shadow-lg">
             Our Notary Services
@@ -603,7 +603,7 @@ export default function ServicesPage() {
               Book an appointment today and experience our professional, convenient mobile notary services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button asChild size="lg" className="bg-deep-charcoal-800 text-white border border-black">
+              <Button asChild size="lg" className="bg-brand-charcoal-700 text-white border border-black">
                 <Link href="/schedule">Book an Appointment</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-neutral-300 text-black">

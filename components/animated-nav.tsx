@@ -130,7 +130,7 @@ export function AnimatedNav() {
                       >
                         <Button
                           asChild
-                          className="w-full mt-2 bg-deep-charcoal-800 hover:bg-deep-charcoal-700 text-white border border-black"
+                          className="w-full mt-2 bg-brand-charcoal-700 hover:bg-brand-charcoal-600 text-white border border-black"
                         >
                           <Link href="/schedule">Book Now</Link>
                         </Button>
@@ -154,7 +154,7 @@ export function AnimatedNav() {
                 <Button
                   asChild
                   size="sm"
-                  className="bg-deep-charcoal-800 hover:bg-deep-charcoal-700 text-white border border-black"
+                  className="bg-brand-charcoal-700 hover:bg-brand-charcoal-600 text-white border border-black"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

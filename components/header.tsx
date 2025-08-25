@@ -42,7 +42,7 @@ export function Header() {
               src="/images/new-logo.png"
               alt="NotariesBy Logo"
               className="h-8 md:h-10 w-auto max-w-[200px] object-contain"
-              style={{ filter: 'brightness(0.2) saturate(1)' }}
+              style={{ filter: 'brightness(0) saturate(100%) invert(20%) sepia(12%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(86%)' }}
             />
           </Link>
 
@@ -58,7 +58,7 @@ export function Header() {
                 </Link>
               ))}
             </nav>
-            <Button asChild className="bg-deep-charcoal-800 text-white border border-black whitespace-nowrap">
+            <Button asChild className="bg-brand-charcoal-700 text-white border border-black whitespace-nowrap">
               <Link href="/schedule">Book Now</Link>
             </Button>
           </div>
@@ -86,7 +86,7 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button asChild className="mt-4 bg-deep-charcoal-800 text-white border border-black">
+              <Button asChild className="mt-4 bg-brand-charcoal-700 text-white border border-black">
                 <Link href="/schedule" onClick={() => setIsOpen(false)}>
                   Book Now
                 </Link>
